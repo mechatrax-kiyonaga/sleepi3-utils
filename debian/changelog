@@ -1,3 +1,14 @@
+sleepi3-utils (1.0.5) bookworm; urgency=medium
+
+  * Modify stop.sh
+  * Modify 85-sleepi3-utils.rules
+  * Modify sleepi3-start.service
+  * debian/control
+    - Add Uploaders
+    - Bump Standards-Version to 4.6.2
+
+ -- Yuta Kiyonaga <kiyonaga@mechatrax.com>  Wed, 14 Jun 2023 02:12:50 +0000
+
 sleepi3-utils (1.0.4) bullseye; urgency=medium
 
   * Modify start.sh

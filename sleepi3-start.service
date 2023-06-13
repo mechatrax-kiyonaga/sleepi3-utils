@@ -1,7 +1,8 @@
 [Unit]
 Description=sleepi3-utils preprocess
 DefaultDependencies=no
-After=sysinit.target
+BindsTo=dev-i2c\x2d1.device
+After=sysinit.target dev-i2c\x2d1.device
 Before=shutdown.target
 
 [Service]
@@ -9,6 +10,3 @@ Type=oneshot
 EnvironmentFile=/etc/default/sleepi3
 ExecStart=/usr/lib/sleepi3-utils/start.sh
 TimeoutSec=30s
-
-[Install]
-WantedBy=sysinit.target
