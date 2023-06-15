@@ -1,13 +1,14 @@
 sleepi3-utils (1.0.5) bookworm; urgency=medium
 
-  * Modify stop.sh
-  * Modify 85-sleepi3-utils.rules
-  * Modify sleepi3-start.service
+  * Change initialization process to use udev rules
   * debian/control
     - Add Uploaders
     - Bump Standards-Version to 4.6.2
+  * debian/install
+    - Add config.py
+    - Remove no use scripts
 
- -- Yuta Kiyonaga <kiyonaga@mechatrax.com>  Wed, 14 Jun 2023 02:12:50 +0000
+ -- Yuta Kiyonaga <kiyonaga@mechatrax.com>  Thu, 15 Jun 2023 11:42:52 +0900
 
 sleepi3-utils (1.0.4) bullseye; urgency=medium
 
