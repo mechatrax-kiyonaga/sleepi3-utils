@@ -10,4 +10,5 @@ Type=oneshot
 ExecStartPre=/bin/bash -c '[ $(sleepi3ctl get wakeup-status) -eq 1 ] && sleepi3alarm clear || true'
 ExecStart=/usr/lib/sleepi3-utils/config.py start
 TimeoutSec=30s
+RemainAfterExit=yes
 
