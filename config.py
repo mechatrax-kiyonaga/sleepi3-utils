@@ -36,6 +36,15 @@ def stop(cli, env):
         cli.set(['restart', '0'])
     cli.set(['sleep-timeout', env['POWEROFF_DELAY']])
     cli.set(['watchdog-timeout', env['BOOT_TIMEOUT']])
+   
+ 
+def halt(cli, env):
+    if env['RETRY_BOOT'] != 0:
+        cli.set(['restart', '1'])
+    else:
+        cli.set(['restart', '0'])
+    cli.set(['sleep-timeout', '0'])
+    cli.set(['watchdog-timeout', '0'])
     
 
 def restart(cli, env):
@@ -58,6 +67,8 @@ if __name__ == '__main__':
         start(cli, env)
     elif arg == 'stop':
         stop(cli, env)
+    elif arg == 'halt':
+        halt(cli, env)
     elif arg == 'restart':
         restart(cli, env)
 
