@@ -1,3 +1,9 @@
+sleepi3-utils (1.0.8) bookworm; urgency=medium
+
+  * Add service for halt target
+
+ -- Yuta Kiyonaga <kiyonaga@mechatrax.com>  Fri, 19 Apr 2024 08:17:34 +0900
+
 sleepi3-utils (1.0.7) bookworm; urgency=medium
 
   * Update to use specified RTC
