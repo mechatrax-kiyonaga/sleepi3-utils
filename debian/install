@@ -10,6 +10,7 @@
 ./sleepi3-hctosys.service /lib/systemd/system/
 ./sleepi3-start.service /lib/systemd/system/
 ./sleepi3-stop.service /lib/systemd/system/
+./sleepi3-halt.service /lib/systemd/system/
 ./sleepi3-restart.service /lib/systemd/system/
 ./sleepi3-heartbeat.service /lib/systemd/system/
 ./sleepi3 /etc/default/
