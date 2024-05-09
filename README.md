@@ -79,7 +79,7 @@ slee-Pi 3 を操作するための実行ファイルです。
   - extin-powerdown  
     外部入力による強制電源断の設定を表示します。  
 
-    0 : 外部入力による強制電源断が無効です。
+    0 : 外部入力による強制電源断が無効です。  
     1 : 外部入力による強制電源断が有効です。
 
   - extin-trigger  
@@ -123,7 +123,7 @@ slee-Pi 3 を操作するための実行ファイルです。
   - switch  
     プッシュスイッチの状態を表示します。  
     
-    0 : プッシュスイッチはオフです。
+    0 : プッシュスイッチはオフです。  
     1 : プッシュスイッチはオンです。
 
   - switch-count  
@@ -325,6 +325,9 @@ slee-Pi 3 をコマンド操作するためのヘルパクラスが実装され�
 
 ### /lib/udev/rules.d/85-sleepi3-utils.rules  
 slee-Pi 3 のデバイスを定義した設定ファイルです。
+
+### /lib/systemd/system/sleepi3-halt.service  
+slee-Pi 3 の終了設定を行うサービスです。
 
 ### /lib/systemd/system/sleepi3-hctosys.service  
 リアルタイムクロックからシステムへ時刻を同期するサービスです。
